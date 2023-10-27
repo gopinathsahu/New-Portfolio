@@ -1,0 +1,120 @@
+/* this is medai queires for all device to make responsive*/
+/*/*short*/
+ @media (min-width:475px){
+
+    
+ }
+ 
+ 
+ /*short-medium*/
+ @media (min-width:640px){
+     
+
+ } 
+ /*medium*/
+ 
+ 
+ /*large*/
+ 
+ 
+ /*xl*/
+ @media (min-width:1280px){
+     
+  
+ }
+ 
+ /*2xl*/
+ @media (min-width:1536px){
+     
+  
+ }
+ .header{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+position: relative;
+z-index: 9999;
+ }
+ .header__menu{
+  display: none;
+ }
+ .header__bars{
+  color: var(--clr-slate600);
+  height: var(--size-2xl);
+  width: var(--size-2xl);
+  display: block;
+ }
+ @media (min-width:768px){
+     
+ 
+ .header__menu{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  gap: 2rem;
+ }
+ .header__link{
+  font-size: var(--size-sm);
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--clr-slate600);
+ letter-spacing: -0.05em;
+ transition: color 0.3s ;
+}
+.header__link:hover{
+  color: var(--clr-light);
+  background-color: var(--clr-rose);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transform: translateY(-4px);
+
+}
+.header__line{
+  border: 1px solid var(--clr-slate600);
+  padding: 1.5em;
+}
+.header__sun {
+ display: block;
+  color: var(--clr-slate600);
+width: var(--size-base);
+height: var(--size-base);
+}
+.header__resume{
+  font-size: var(--size-sm);
+}
+.header__bars{
+  display: none;
+}
+ }
+ @media (min-width:1024px){
+  .header__link{
+    font-size: var(--size-sm);
+    
+  }
+  .header__link:hover{
+    color: var(--clr-light);
+    background-color: var(--clr-rose);
+    border: 1px solid transparent;
+    border-radius: 6px;
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(225, 29, 72, 0.5),0  10px 10px rgba(225, 29, 72, 0.5),0 0 120px -10px var(--clr-rose);
+  
+  }
+  .header__line{
+    border: 1px solid var(--clr-slate600);
+    padding: 3px;
+  }
+  .header__sun {
+   display: block;
+    color: var(--clr-slate600);
+  width: var(--size-base);
+  height: var(--size-base);
+  }
+  .header__resume{
+    font-size: var(--size-sm);
+  }
+     
+ }

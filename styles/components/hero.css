@@ -1,0 +1,143 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    
+}
+.hero__img{
+    
+    width: var(--size-10xl);
+    height: var(--size-10xl);
+  border-radius: 50%;    
+}
+.hero__subtitle{
+    color: var(--clr-slate800);
+    font-size: medium;
+    text-transform: capitalize;
+    font-size: var(--size-4xl);
+    line-height: 0.9;
+}
+.hero__title{
+    color: var(--clr-slate400);
+    text-transform: capitalize;
+    font-size: var(--size-4xl);
+    
+}
+.hero_description{
+    max-width: 60ch;
+    font-style: var(--size-sm);
+    color: var(--clr-slate600);
+}
+.hero__btn{
+    text-transform: capitalize;
+    font-size: var(--size-sm);
+}
+/* responsive */
+ @media (min-width:475px){
+
+    .hero{
+        gap: 1.5rem;
+        
+    }
+    .hero__img{
+        
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+    .hero__subtitle{
+        
+        font-size: var(--size-lg);
+        }
+    .hero__title{
+        font-size: var(--size-5xl);
+        
+    }
+    .hero_description{
+        
+        font-style: var(--size-base);
+        color: var(--clr-slate600);
+    }
+    .hero__btn{
+        text-transform: capitalize;
+        font-size: var(--size-sm);
+    }
+ }
+ 
+ 
+ /*short-medium*/
+ @media (min-width:640px){
+     
+   }
+ 
+ /*medium*/
+ @media (min-width:768px){
+     
+  }
+ 
+ /*large*/
+  @media (min-width:1024px){
+    
+    .hero__img{
+        
+        width: 8rem;
+        height: 8rem;
+    }
+    .hero__subtitle{
+        
+        font-size: var(--size-2xl);
+        }
+    .hero__title{
+        font-size: var(--size-7xl);
+        
+    }
+    .hero_description{
+        
+        font-style: var(--size-lg);
+        color: var(--clr-slate600);
+    }
+    .hero__btn{
+        text-transform: capitalize;
+        font-size: var(--size-lg);
+    }
+   }
+ 
+ /*xl*/
+  @media (min-width:1280px){
+     
+    .hero{
+        gap: 1rem;
+        
+    }
+    .hero__img{
+        
+        width: 10rem;
+        height: 10rem;
+    }
+    .hero__subtitle{
+        
+        font-size: var(--size-2xl);
+        }
+    .hero__title{
+        font-size: var(--size-4xl);
+        
+    }
+    .hero_description{
+        
+        font-style: var(--size-xl);
+        color: var(--clr-slate600);
+    }
+    .hero__btn{
+        text-transform: capitalize;
+        font-size: var(--size-xl);
+    }
+ }
+ 
+ /*2xl*/
+ @media (min-width:1536px){
+     
+  
+ }

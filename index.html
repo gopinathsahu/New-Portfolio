@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,501,400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/util.css">
+  <link rel="stylesheet" href="./styles/components/about.css">
+  <link rel="stylesheet" href="./styles/components/contact.css">
+  <link rel="stylesheet" href="./styles/components/footer.css">
+  <link rel="stylesheet" href="./styles/components/header.css">
+  <link rel="stylesheet" href="./styles/components/hero.css">
+  <link rel="stylesheet" href="./styles/components/mobile-nav.css">
+  <link rel="stylesheet" href="./styles/components/project.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i"
+    type="text/css" media="all">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,501,400,700&f[]=poppins@401,500,601&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/8a4ba72b40.js" crossorigin="anonymous"></script>
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header id="Home house " class=" header container">
+    <nav>
+      <ul class="header__menu">
+        <li>
+          <a class="header__link" href="#Home">HOME</a>
+        </li>
+        
+        <li>
+          <a class="header__link" href="#about">ABOUT</a>
+        </li>
+        <li>
+          <a class="header__link" href="#project">PROJECT</a>
+        </li>
+        <li>
+          <a class="header__link" href="#contact">CONTACT</a>
+        </li>
+        <li class="header__line"></li>
+        <li>
+          <button
+            aria-label="theme-toggle btn"
+            id="theme-toggle"
+            class="header__sun"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="header__resume btn" href="https://drive.google.com/file/d/1JBY0TPQMppeG0uRFi84h_N5bfECfy8j4/view?usp=drivesdk">Resume</a>
+        </li>
+      </ul>
+      <button aria-label="mobile nav button" class="header__bars">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </nav>
+</header>
+<!-- mobile-nav is start-->
+
+
+<div class="mobile-nav">
+  <nav>
+    <ul class="mobile-nav__menu">
+      
+      <li>
+        <a  class="mobile-nav__link" href="#house">HOME</a>
+      </li>
+      <li>
+        <a   class="mobile-nav__link" href="#myself">ABOUT</a>
+      </li>
+      <li>
+        <a  class="mobile-nav__link" href="#work">PROJECT</a>
+      </li>
+      <li>
+        <a class="mobile-nav__link" href="#meet">CONTACT</a>
+      </li>
+      <li class="mobile-nav__link-line"></li>
+      <li>
+        <button
+          aria-label="theme-toggle btn"
+          id="theme-toggle"
+          class="mobile-nav__sun"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+            />
+          </svg>
+        </button>
+      </li>
+      <li>
+        <a class="mobile-nav__btn btn" href="https://drive.google.com/file/d/1JBY0TPQMppeG0uRFi84h_N5bfECfy8j4/view?usp=drivesdk">Resume</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+
+
+  <main>
+    <section id="hero" class="hero container">
+      <img loading="lazy" class="hero__img" src="images/52812.jpg" alt="image is not found">
+      <h2 class="hero__subtitle">Hii , I'm Gopinath👋</h2>
+      <div class="wrapper">
+        I'm a <span></span>
+
+      </div>
+      <p class="hero__description">A passoniate <strong> Frontend / Fullstack Web Developer</strong> and
+        <strong>UI/UX</strong> enthusiast specialized in building stuuning pixel-perfect interactive
+        websites/applications.
+      </p>
+      <a class="hero__btn btn" href="mailto:gopinathsahu2003@gmail.com">Reachout</a>
+    </section>
+    <section id=" myself" class="about container section">
+      <div class="about__content">
+        <h2 class="about__title">About <span>Me</span></h2>
+        <p class="about__description">Hello there! I'm Gopinath,a <strong>Front-end / Fullstack Web Developer</strong>
+          based near Montreal. I wake up in the morning,grab a cup of timmies coffee,open up my laptop and build that
+          live on the web all day,everyday.</p>
+        <p class="about__description">I am under graduate student in the branch of <strong> Electronics and
+            tele-communication Engineering</strong>from<strong> PMEC</strong>,Bramhapur. Having a non-tech background
+          found interest in technology such as Web Development, Programming etc. I love to play cricket, football,
+          Kabbadi etc.</p>
+
+        <p class="about__description">
+          ⭐ &nbsp; Birthday : <strong>17 mar 2003</strong> <br>
+          ⭐ &nbsp; Phone : <strong>8260852577 </strong><br>
+          ⭐ &nbsp; City : <strong>ashinagar,Gajapati,Odisha,India</strong> <br>
+          ⭐ &nbsp; Age : <strong>21 </strong><br>
+          ⭐ &nbsp; Degree : <strong>B.Tech </strong><br>
+          ⭐ &nbsp; Email : <strong>gopinathsahu2003@gmail.com </strong><br>
+          ⭐ &nbsp; Freelance : <strong> Available </strong><br>
+        </p>
+        <hr class="about__hr">
+        <h3 class="about__subtitle"> TECHNOLOGIES</h3>
+        <div class="about__ul-container">
+          <ul class="about__ul">
+            <li class="about__list">HTML</li>
+            <li class="about__list">CSS</li>
+            <li class="about__list">JAVA-SCRIPT</li>
+            <li class="about__list">Tailwind-CSS</li>
+
+
+          </ul>
+          <ul class="about__ul">
+            <li class="about__list">DBMS</li>
+            <li class="about__list">MYSQL</li>
+            <li class="about__list">MONGODB</li>
+            <li class="about__list">Nodejs</li>
+          </ul>
+          <ul class="about__ul">
+            <li class="about__list">Expressjs</li>
+            <li class="about__list">Reactjs</li>
+            <li class="about__list">JAVA</li>
+            <li class="about__list">DSA With JAVA</li>
+
+          </ul>
+
+        </div>
+      </div>
+      <div class="about__img-wrapper">
+        <img loading="lazy" class="about__img" src="images/photo.jpg" alt="image is not found">
+      </div>
+    </section>
+    <section id=" work" class="project container section">
+      <h2 class="project__title">Projects</h2>
+      <p class="project__description">Revamping your organization’s payroll system or putting reward and recognition
+        processes in place can be defined as a <strong>projects</strong>.
+        Also, while defining projects, it’s important that you don’t mistake them with operations or operational
+        activities</p>
+
+      <div class="project__container">
+        <!-- project1-->
+        <div class="project__image-wrapper project__image1 "><a href="">
+            <img loading="lazy" src="images/hhh.jpg" alt="image is not found"></a>
+        </div>
+
+        <div class="project__project1 project__content1">
+
+          <h3 class="project__project1-title">Amazon Clone</h3>
+          <p class="project__project1-description1">Creating an Amazon clone, often referred to as an Amazon-like or
+            e-commerce platform, requires careful planning
+            and development to replicate the essential features and functionality of the popular online marketplace
+            Amazon.com.</p>
+          <p class="project__project1-description2">Creating an Amazon clone is a complex undertaking that requires a
+            talented development team, strong server
+            infrastructure, and a comprehensive business strategy</p>
+
+          <a class="btn project__project1-btn" href="https://github.com/gopinathsahu/Amazon-clone">Github Link</a>
+
+        </div>
+
+        <!--project2-->
+
+        <div class="project__image-wrapper project__image2"><a href="">
+            <img loading="lazy" src="images/ppp.jpeg" alt="image is not found"></a>
+        </div>
+        <div class="project__project1 project__content2">
+          <h3 class="project__project1-title">Landing Page</h3>
+          <p class="project__project1-description1">A landing page is a web page specifically designed to capture a
+            visitor's attention and encourage them to take a specific action, such as making a purchase, signing up for
+            a
+            newsletter, or filling out a contact form. </p>
+          <p class="project__project1-description2">A well-designed landing page focuses on a single offer and provides
+            compelling and relevant content, a clear call-to-action, and an intuitive user experience to maximize
+            conversions.</p>
+          <a class="btn project__project1-btn" href="https://github.com/gopinathsahu/Landingpage">Github Link</a>
+        </div>
+        <!--project3-->
+
+        <div class="project__image-wrapper  project__image3"><a href="https://portfolio-gopinath.vercel.app/">
+            <img class="lazy"  src="images/kkk.png" alt="image is not found"></a>
+        </div>
+        <div class="project__project1 project__content3">
+          <h3 class="project__project1-title">Old Portfolio</h3>
+          <p class="project__project1-description1">A portfolio is a collection of your best and most relevant work and
+            experiences that demonstrate your skills, abilities, and accomplishments. It is typically used by
+            professionals in various fields, such as artists, designers, writers, photographers, and marketers, to
+            showcase their work and attract potential clients or employers. </p>
+          <p class="project__project1-description2">A well-designed and comprehensive portfolio can help you stand out
+            in
+            a competitive job market, demonstrate your abilities to potential employers or clients, and provide evidence
+            of your past successes</p>
+          <a class="btn project__project1-btn" href="https://github.com/gopinathsahu/portfolio">Github Link</a>
+        </div>
+
+        <!--project4-->
+        <div class="project__image-wrapper project__image4">
+          <a href="https://github.com/gopinathsahu/RGB-Color-Generator">
+            <img loading="lazy" src="images/RGB.jpeg" alt="image is not found"></a>
+        </div>
+        <div class="project__project1 project__content4">
+
+          <h3 class="project__project1-title">RGB Colour Generator </h3>
+          <p class="project__project1-description1">An RGB color generator is a tool or program that creates colors
+            using
+            the RGB color model. RGB stands for Red, Green, and Blue, and it is the most common method for representing
+            and displaying colors in digital devices such as computer monitors, digital cameras, and television
+            screens..
+          </p>
+          <p class="project__project1-description2"> In the RGB model, colors are created by mixing varying intensities
+            of
+            red, green, and blue light. Each of these primary colors can have values ranging from 0 to 255, and the
+            combination of these values in different proportions results in a wide spectrum of colors.</p>
+          <a class="btn project__project1-btn" href="https://github.com/gopinathsahu/RGB-Color-Generator">Github
+            Link</a>
+        </div>
+        <!--project 5-->
+
+        <div class="project__image-wrapper project__image5">
+          <a href="https://github.com/gopinathsahu/Random-Joke"> <img loading="lazy" src="images/aaa.png" alt="image is not found"></a>
+
+        </div>
+
+        <div class="project__project1 project__content5">
+
+          <h3 class="project__project1-title">Tell Me a Joke </h3>
+          <p class="project__project1-description1">A joke is a form of entertainment that typically involves a
+            punchline or a humorous ending. It is usually concise and meant to elicit laughter. </p>
+          <p class="project__project1-description2"> Jokes can be based on wordplay, puns, cultural references,
+            situational comedy, or exaggeration. They are often shared verbally or in written form and are a common way
+            people use humor to connect and entertain others.</p>
+          <a class="btn project__project1-btn" href="https://github.com/gopinathsahu/Random-Joke">Github Link</a>
+        </div>
+      </div>
+
+    </section>
+    <section id=" meet" class="contact container ">
+
+      <h2 class="contact__title"> Contact <span>Me!</span></h2>
+      <form action="">
+        <label for="">Full Name: &nbsp; </label><input type="text" placeholder="Gopinath Sahu" maxlength="20" size="25"
+          minlength="4" name="name" id="Gopi"><br>
+
+        <label for="">Email Adress : &nbsp;</label><input type="email" placeholder="abc@gmail.com" size="25"
+          maxlength="20" minlength="4" name="name" id="email"><br>
+        <label for=""> Mobile Number: &nbsp; </label><input type="text" placeholder="8260852577" maxlength="10"
+          size="25" name="name" id="mobile"><br>
+        <label for="">Email Subject : &nbsp;</label><input type="text" placeholder="for hiring " maxlength="10"
+          size="25" minlength="10" name="name" id="phone"><br>
+        <label for="">Message : &nbsp;</label><textarea name="" id="" cols="15" rows="8"
+          placeholder="write something here"></textarea><br>
+        <button class="btn">Send Message</button>
+      </form>
+
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="row ">
+        <a href="https://www.facebook.com/prince.kusha.52"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com/gopinathsahu4?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/Gopinat40831826?t=8pdGqAb7JwVMj4Ig1kr6BQ&s=08"><i
+            class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/gopinath-sahu-351394246"><i class="fa-brands fa-linkedin"></i></a>
+        <a href=" https://github.com/gopinathsahu"><i class="fa-brands fa-github fa-lg"></i></a>
+
+      </div>
+
+      <div class="rows">
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Awards</a></li>
+          <li><a href="#">Certificate</a></li>
+          <li><a href="#">Extra Skills</a></li>
+          <li><a href="#">Career</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+        INFERNO Copyright © 2023 Inferno - All rights reserved || Designed By: <strong>GOPINATH SAHU</strong>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+
+</body>
+
+</html>

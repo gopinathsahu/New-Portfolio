@@ -1,0 +1,630 @@
+:root{
+ --clr-dark:#070a13;
+ --clr-light:#f1f5f9;
+ --clr-slate400:#94a3b8 ;
+ --clr-slate600:#475569 ;
+ --clr-slate800:#1e293b ;
+ --clr-rose: #e11d48;
+ --clr-indigo:#4338ca ;
+ 
+
+  /* sizes*/
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm:0.875rem ;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl:1.5rem ;
+  --size-3xl: 1.875rem;
+  --size-4xl:2.25rem ;
+  --size-5xl:3rem ;
+  --size-6xl: 3.75rem;
+  --size-7xl:4.5rem ;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl:10rem ;
+ 
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    line-height: calc(1em+0.5rem);
+}
+html{
+    scroll-behavior: smooth;
+}
+.light-mode{
+  --clr-light:#070a13;
+  --clr-dark:#f1f5f9;
+  --clr-slate400:#1e293b ;
+  --clr-slate600:#1e293b ;
+  --clr-slate800:#1e293b ;
+}
+body{
+    margin: 0;padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+}
+
+img,video,picture,canvas,svg{
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+button{
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+}
+a{
+    color: var(--clr-rose);
+}
+strong{
+    color: var(--clr-indigo);
+}
+span{
+    color: var(--clr-indigo);
+}
+
+/* util*/
+
+/* this is medai queires for all device to make responsive*/
+/*/*short*/
+/* @media (min-width:475px){
+
+    
+ }
+ 
+ 
+ /*short-medium*/
+/* @media (min-width:640px){
+     
+   }
+ 
+ /*medium*/
+/* @media (min-width:768px){
+     
+  }
+ 
+ /*large*/
+/* @media (min-width:1024px){
+     
+   }
+ 
+ /*xl*/
+ /* @media (min-width:1280px){
+     
+  
+ }
+ 
+ /*2xl*/
+/* @media (min-width:1536px){
+     
+  
+ }*/
+
+ .btn{
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.05em;
+    background-color: var(--clr-rose);
+    color: var(--clr-light);
+    padding: 0.5em 1em;
+    margin-top: 2px;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5),0  6px 6px rgba(225, 29, 72, 0.5),0 0 100px -10px var(--clr-rose);
+    
+}
+.btn:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(225, 29, 72, 0.5),0  10px 10px rgba(225, 29, 72, 0.5),0 0 120px -10px var(--clr-rose);
+
+}
+.container{
+    padding: 0;margin: 0;
+    width: 100%;
+margin-right: auto;
+    margin-left: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: 0 auto ;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+.section{
+    margin-top: 5rem;
+}
+.wrapper{
+    font-size: 34px;
+    font-weight: 600;
+  margin-left: -150px;
+    min-width: 300px;
+}
+.wrapper span{
+    margin-left: 5px;
+    position:absolute;
+}
+.wrapper span::before{
+    content: " FUllstack  Web Developer";
+     color: var(--clr-rose);
+     animation: words 20s infinite ;
+}
+.wrapper span::after{
+    content: "";
+    position: absolute;
+    width: calc(100%+8px);
+    height: 100%;
+    background-color:var(--clr-dark);
+    border-left: 2px solid aqua; 
+    right: -8px;
+    animation: cursor 1.5s infinite,typing 20s steps(14) infinite alternate-reverse ;
+}
+@keyframes cursor{
+    to{
+        border-left: 1px solid #ff7f5000;
+    }
+}
+@keyframes words{
+    0%,20%{
+        content: "Fullstack web Developer";
+    }
+    21%,40%{
+        content: "Frontend Developer";
+    }
+    41%,60%{
+        content: "UI/UX Designer";
+    }
+    61%,80%{
+        content: "Software Developer";
+    }
+    81%,100%{
+        content: " Coder";
+    }
+}
+@keyframes  typing{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+    width:calc(100% + 8px);
+    }
+}
+/* FOR RESPONSIVE WE USE THE MEDIA  QUERIES*/
+
+@media (min-width:375px){
+
+    .container{
+     max-width : 375px;
+     margin-bottom: 80px;
+    }
+    .section{
+     margin-top: 5rem;
+ }
+ .wrapper{
+     font-size: 18px;
+     font-weight: 700;
+   margin-left: -150px;
+     min-width: 300px;
+ }
+ .wrapper span{
+     margin-left: 10px;
+     position:absolute;
+ }
+ .wrapper span::before{
+     content: " FUllstack  Web Developer";
+      color: var(--clr-rose);
+      animation: words 20s infinite ;
+ }
+ .wrapper span::after{
+     content: "";
+     position: absolute;
+     width: calc(100%+8px);
+     height: 100%;
+     background-color:var(--clr-dark);
+     border-left: 2px solid aqua; 
+     right: -8px;
+     animation: cursor 1.5s infinite,typing 20s steps(14) infinite alternate-reverse ;
+ }
+ @keyframes cursor{
+     to{
+         border-left: 1px solid #ff7f5000;
+     }
+ }
+ @keyframes words{
+     0%,20%{
+         content: "Fullstack web Developer";
+     }
+     21%,40%{
+         content: "Frontend Developer";
+     }
+     41%,60%{
+         content: "UI/UX Designer";
+     }
+     61%,80%{
+         content: "Software Developer";
+     }
+     81%,100%{
+         content: " Coder";
+     }
+ }
+ @keyframes  typing{
+     10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+         width: 0;
+     }
+     5%,20%,25%,40%,45%,60%,65%,80%,85%{
+     width:calc(100% + 8px);
+     }
+ }
+ 
+ }
+ 
+/*short*/
+@media (min-width:425px){
+
+   .container{
+    max-width : 475px;
+    margin-bottom: 100px;
+   }
+   .section{
+    margin-top: 10rem;
+}
+.wrapper{
+    font-size: 25px;
+    font-weight: 700;
+  margin-left: -270px;
+    min-width: 300px;
+}
+.wrapper span{
+    margin-left: 5px;
+    position:absolute;
+}
+.wrapper span::before{
+    content: " FUllstack  Web Developer";
+     color: var(--clr-rose);
+     animation: words 20s infinite ;
+}
+.wrapper span::after{
+    content: "";
+    position: absolute;
+    width: calc(100%+8px);
+    height: 100%;
+    background-color:var(--clr-dark);
+    border-left: 2px solid aqua; 
+    right: -8px;
+    animation: cursor 1.5s infinite,typing 20s steps(14) infinite alternate-reverse ;
+}
+@keyframes cursor{
+    to{
+        border-left: 1px solid #ff7f5000;
+    }
+}
+@keyframes words{
+    0%,20%{
+        content: "Fullstack web Developer";
+    }
+    21%,40%{
+        content: "Frontend Developer";
+    }
+    41%,60%{
+        content: "UI/UX Designer";
+    }
+    61%,80%{
+        content: "Software Developer";
+    }
+    81%,100%{
+        content: " Coder";
+    }
+}
+@keyframes  typing{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+    width:calc(100% + 8px);
+    }
+}
+
+}
+
+
+/*short-medium*/
+@media (min-width:640px){
+    
+   .container{
+    max-width : 640px;
+    margin-bottom: 100px;   
+}
+.section{
+    margin-top: 10rem;
+} 
+}
+
+/*medium*/
+@media (min-width:768px){
+    
+   .container{
+    max-width : 768px;
+    margin-bottom: 100px;
+}
+.section{
+    margin-top: 10rem;
+} 
+.wrapper{
+    font-size: 28px;
+    font-weight: 700;
+  margin-left: -150px;
+    min-width: 300px;
+}
+.wrapper span{
+    margin-left: 5px;
+    position:absolute;
+}
+.wrapper span::before{
+    content: " FUllstack  Web Developer";
+     color: var(--clr-rose);
+     animation: words 20s infinite ;
+}
+.wrapper span::after{
+    content: "";
+    position: absolute;
+    width: calc(100%+8px);
+    height: 100%;
+    background-color:var(--clr-dark);
+    border-left: 2px solid aqua; 
+    right: -8px;
+    animation: cursor 1.5s infinite,typing 20s steps(14) infinite alternate-reverse ;
+}
+@keyframes cursor{
+    to{
+        border-left: 1px solid #ff7f5000;
+    }
+}
+@keyframes words{
+    0%,20%{
+        content: "Fullstack web Developer";
+    }
+    21%,40%{
+        content: "Frontend Developer";
+    }
+    41%,60%{
+        content: "UI/UX Designer";
+    }
+    61%,80%{
+        content: "Software Developer";
+    }
+    81%,100%{
+        content: " Coder";
+    }
+}
+@keyframes  typing{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+    width:calc(100% + 8px);
+    }
+}
+
+}
+
+/*large*/
+@media (min-width:1024px){
+    
+   .container{
+    max-width : 1024px;
+    margin-bottom: 100px;
+
+}
+.section{
+    margin-top: 10rem;
+} 
+.wrapper{
+    font-size: 30px;
+    font-weight: 900;
+  margin-left: -150px;
+    min-width: 300px;
+}
+.wrapper span{
+    margin-left: 5px;
+    position:absolute;
+}
+.wrapper span::before{
+    content: " FUllstack  Web Developer";
+     color: var(--clr-rose);
+     animation: words 20s infinite ;
+}
+.wrapper span::after{
+    content: "";
+    position: absolute;
+    width: calc(100%+8px);
+    height: 100%;
+    background-color:var(--clr-dark);
+    border-left: 2px solid aqua; 
+    right: -8px;
+    animation: cursor 1.5s infinite,typing 20s steps(14) infinite alternate-reverse ;
+}
+@keyframes cursor{
+    to{
+        border-left: 1px solid #ff7f5000;
+    }
+}
+@keyframes words{
+    0%,20%{
+        content: "Fullstack web Developer";
+    }
+    21%,40%{
+        content: "Frontend Developer";
+    }
+    41%,60%{
+        content: "UI/UX Designer";
+    }
+    61%,80%{
+        content: "Software Developer";
+    }
+    81%,100%{
+        content: " Coder";
+    }
+}
+@keyframes  typing{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+    width:calc(100% + 8px);
+    }
+}
+
+}
+
+
+/*xl*/
+@media (min-width:1280px){
+    
+   .container{
+    max-width : 1280px;
+    margin-bottom: 100px;
+   }
+   .section{
+    margin-top: 10rem;
+} 
+.wrapper{
+    font-size: 32px;
+    font-weight: 700;
+  margin-left: -150px;
+    min-width: 300px;
+}
+.wrapper span{
+    margin-left: 5px;
+    position:absolute;
+}
+.wrapper span::before{
+    content: " FUllstack  Web Developer";
+     color: var(--clr-rose);
+     animation: words 20s infinite ;
+}
+.wrapper span::after{
+    content: "";
+    position: absolute;
+    width: calc(100%+8px);
+    height: 100%;
+    background-color:var(--clr-dark);
+    border-left: 2px solid aqua; 
+    right: -8px;
+    animation: cursor 1.5s infinite,typing 20s steps(14) infinite alternate-reverse ;
+}
+@keyframes cursor{
+    to{
+        border-left: 1px solid #ff7f5000;
+    }
+}
+@keyframes words{
+    0%,20%{
+        content: "Fullstack web Developer";
+    }
+    21%,40%{
+        content: "Frontend Developer";
+    }
+    41%,60%{
+        content: "UI/UX Designer";
+    }
+    61%,80%{
+        content: "Software Developer";
+    }
+    81%,100%{
+        content: " Coder";
+    }
+}
+@keyframes  typing{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+    width:calc(100% + 8px);
+    }
+}
+
+}
+
+/*2xl*/
+@media (min-width:1536px){
+    
+   .container{
+    max-width : 1536px;
+    margin-bottom: 100px;
+   }
+   .section{
+    margin-top: 10rem;
+} 
+.wrapper{
+    font-size: 34px;
+    font-weight: 900;
+  margin-left: -150px;
+    min-width: 300px;
+}
+.wrapper span{
+    margin-left: 5px;
+    position:absolute;
+}
+.wrapper span::before{
+    content: " FUllstack  Web Developer";
+     color: var(--clr-rose);
+     animation: words 20s infinite ;
+}
+.wrapper span::after{
+    content: "";
+    position: absolute;
+    width: calc(100%+8px);
+    height: 100%;
+    background-color:var(--clr-dark);
+    border-left: 2px solid aqua; 
+    right: -8px;
+    animation: cursor 1.5s infinite,typing 20s steps(14) infinite alternate-reverse ;
+}
+@keyframes cursor{
+    to{
+        border-left: 1px solid #ff7f5000;
+    }
+}
+@keyframes words{
+    0%,20%{
+        content: "Fullstack web Developer";
+    }
+    21%,40%{
+        content: "Frontend Developer";
+    }
+    41%,60%{
+        content: "UI/UX Designer";
+    }
+    61%,80%{
+        content: "Software Developer";
+    }
+    81%,100%{
+        content: " Coder";
+    }
+}
+@keyframes  typing{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+    width:calc(100% + 8px);
+    }
+}
+
+}
+
+
+
+ 
+ 
+
+
+    
+ 
